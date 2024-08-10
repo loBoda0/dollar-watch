@@ -4,7 +4,7 @@ import TotalBalanceBox from '@/components/TotalBalanceBox';
 import { getLoggedInUser } from '@/lib/actions/user.actions';
 
 const Home = async () => {
-    const loggedInUser = await getLoggedInUser()
+    const loggedInUser = await getLoggedInUser();
 
     return (
         <section className='home'>

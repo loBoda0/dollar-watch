@@ -9,9 +9,9 @@ export default async function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const loggedInUser = await getLoggedInUser()
+    const loggedInUser = await getLoggedInUser();
 
-    if (!loggedInUser) redirect('/sign-in')
+    if (!loggedInUser) redirect('/sign-in');
 
     return (
         <main className='flex h-screen w-full font-inter'>
